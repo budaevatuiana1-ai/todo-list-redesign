@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Мой Список Дел</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <header>
+    <div class="brand">
+      <span class="brand-mark" aria-hidden="true">✓</span>
+      <div class="brand-text">
+        <h1>Мой список дел</h1>
+        <p class="subtitle">Добавляйте задачи и отмечайте выполненные</p>
+      </div>
+    </div>
+  </header>
+
+  <section id="add-section">
+    <div id="addRow">
+      <input type="text" id="taskInput" placeholder="Что нужно сделать?" autocomplete="off">
+      <button id="addBtn" type="button"><span class="plus" aria-hidden="true">+</span> Добавить</button>
+    </div>
+  </section>
+
+  <section id="list-section">
+    <div class="list-head">
+      <h2>Задачи</h2>
+      <p class="stats"><span class="chip">Всего: <span id="taskCount">0</span></span><span class="chip">Выполнено: <span id="doneCount">0</span></span></p>
+    </div>
+    <ul id="taskList"></ul>
+  </section>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
